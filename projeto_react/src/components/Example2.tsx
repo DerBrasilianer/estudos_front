@@ -31,6 +31,22 @@ const Example2Component = () => {
     }
 
 
+    const [isSubmit, setIsSubmit] = useState<boolean>(false)
+
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+        e.preventDefault()
+
+        if (data.name && data.email) {
+
+            setIsSubmit(true)
+
+        }
+
+    }
+
+
     return (
 
         <>
