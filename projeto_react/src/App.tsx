@@ -1,4 +1,5 @@
 import './App.css'
+import MyComponent from './components/my-component'
 
 function App() {
 
@@ -6,7 +7,7 @@ function App() {
 
     <>
       
-      
+      <MyComponent />
 
     </>
 
