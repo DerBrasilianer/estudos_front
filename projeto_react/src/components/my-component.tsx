@@ -1,14 +1,14 @@
-interface MyComponent {
+interface MyComponentProps {
 
     color?: string
-    
+
 }
 
-const MyComponent = (props: MyComponent) => {
+const MyComponent = ({ color }: MyComponentProps) => {
 
     return (
 
-        <p style={{color: props.color}}>
+        <p style={{color: color}}>
 
             Hello, world!
 
