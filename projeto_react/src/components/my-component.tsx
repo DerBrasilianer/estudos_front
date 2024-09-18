@@ -1,8 +1,12 @@
-const MyComponent = () => {
+interface MyComponent {
+    color?: string
+}
+
+const MyComponent = (props: MyComponent) => {
 
     return (
 
-        <p>
+        <p style={{color: props.color}}>
 
             Hello, world!
 
