@@ -1,5 +1,7 @@
 interface MyComponent {
+
     color?: string
+    
 }
 
 const MyComponent = (props: MyComponent) => {
