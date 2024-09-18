@@ -9,12 +9,10 @@ const ExampleComponent = () => {
             </h6>
 
             <p>
-
                 Nome:
                 <span>
                     Nome aqui
                 </span>
-
             </p>
 
             <button>
