@@ -1,4 +1,6 @@
-interface MyComponentProps {
+import { PropsWithChildren } from "react"
+
+interface MyComponentProps extends PropsWithChildren {
 
     color?: string
 
