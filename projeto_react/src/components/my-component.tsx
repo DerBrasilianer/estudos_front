@@ -3,7 +3,7 @@ import { PropsWithChildren } from "react"
 interface MyComponentProps extends PropsWithChildren {
 
     color?: string
-    identifyClick?: () => void
+    identifyClick?: (button: HTMLButtonElement) => void
 
 }
 
@@ -19,7 +19,7 @@ const MyComponent = ({ color = 'blue', identifyClick, children }: MyComponentPro
 
         </p>
 
-        <button onClick={() => identifyClick ? identifyClick(): null}>
+        <button onClick={(e) => identifyClick ? identifyClick(e.currentTarget): null}>
             Click
         </button>
 

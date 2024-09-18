@@ -3,9 +3,9 @@ import MyComponent from './components/my-component'
 
 function App() {
 
-  const clickRecieved = () => {
+  const clickRecieved = (button: HTMLButtonElement) => {
 
-    console.log('Click Recieved')
+    console.log('Click Recieved on button', button)
 
   }
 
