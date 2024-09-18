@@ -58,7 +58,13 @@ const Example4Component = () => {
 
                 <label htmlFor="zipcode">
                     Digite o CEP (ex: 01001-000) <br />
-                    <input type="text" name="zipcode" id="zipcode" value={zipcode} onChange={e => setZipcode(e.target.value)} pattern="\d{5}-\d{3}" />
+                    <input 
+                        type="text" 
+                        name="zipcode" 
+                        id="zipcode" 
+                        value={zipcode} 
+                        onChange={e => setZipcode(e.target.value)} 
+                        pattern="\d{5}-\d{3}" />
                 </label>
 
                 <br />
@@ -89,7 +95,7 @@ const Example4Component = () => {
         </div>
 
     );
-    
+
 };
 
 export default Example4Component;
