@@ -1,5 +1,5 @@
 import './App.css'
-import ExampleComponent from './components/Example'
+import Example2Component from './components/Example2'
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
     
     <>
       
-      <ExampleComponent />
+      <Example2Component />
 
     </>
 
