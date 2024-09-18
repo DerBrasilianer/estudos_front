@@ -3,11 +3,17 @@ import MyComponent from './components/my-component'
 
 function App() {
 
-  return (
+  const clickRecieved = () => {
 
+    console.log('Click Recieved')
+
+  }
+
+  return (
+    
     <>
       
-      <MyComponent>
+      <MyComponent identifyClick={clickRecieved}>
         Hello, World!
       </MyComponent>
 
