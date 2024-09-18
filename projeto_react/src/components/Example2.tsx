@@ -51,7 +51,7 @@ const Example2Component = () => {
 
         <>
         
-            <form>
+            <form onSubmit={handleSubmit}>
 
                 <h4>
                     Formulário
