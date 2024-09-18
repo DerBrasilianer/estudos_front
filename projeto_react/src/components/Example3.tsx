@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Example3Component = () => {
 
@@ -8,6 +8,29 @@ const Example3Component = () => {
         height: window.innerHeight
 
     })
+
+    useEffect(() => {
+
+        const handleResize = () => {
+
+            setWindowSize({
+
+                width: window.innerWidth,
+                height: window.innerHeight
+
+            })
+
+        }
+
+        window.addEventListener('resize', handleResize)
+
+        return () => {
+
+            window.removeEventListener('resize', handleResize)
+
+        }
+
+    }, [])
 
     return (
 
