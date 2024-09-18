@@ -1,11 +1,13 @@
 import './App.css'
-import Example4Component from './components/Example4'
+import ThemeProvider from './contexts/ThemeContext/ThemeProvider'
 
 function App() {
 
   return (
 
-    <Example4Component />
+    <ThemeProvider>
+      Hello, World!
+    </ThemeProvider>
 
   )
 
