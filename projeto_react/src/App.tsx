@@ -7,7 +7,7 @@ function App() {
 
     <>
       
-      <MyComponent color='red'>
+      <MyComponent>
         Hello, World!
       </MyComponent>
 

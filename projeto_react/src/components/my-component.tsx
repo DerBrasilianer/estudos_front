@@ -6,7 +6,7 @@ interface MyComponentProps extends PropsWithChildren {
 
 }
 
-const MyComponent = ({ color, children }: MyComponentProps) => {
+const MyComponent = ({ color = 'blue', children }: MyComponentProps) => {
 
     return (
 
