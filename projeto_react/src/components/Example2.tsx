@@ -16,6 +16,21 @@ const Example2Component = () => {
 
     })
 
+
+    const inputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+        const { name, value } = e.target
+
+        setData({
+
+            ...data,
+            [name]: value
+
+        })
+    
+    }
+
+
     return (
 
         <>
@@ -29,7 +44,7 @@ const Example2Component = () => {
                 <label htmlFor="name">
 
                     Nome <br />
-                    <input id="name" name="name" type="text" value={data.name} />
+                    <input id="name" name="name" type="text" value={data.name} onChange={inputChange} />
 
                 </label>
 
@@ -39,7 +54,7 @@ const Example2Component = () => {
                 <label htmlFor="email">
 
                     E-mail <br />
-                    <input id="email" name="email" type="email" value={data.email} />
+                    <input id="email" name="email" type="email" value={data.email} onChange={inputChange} />
 
                 </label>
 
