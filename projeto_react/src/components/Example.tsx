@@ -1,7 +1,12 @@
+import { useState } from "react"
+
 const ExampleComponent = () => {
+
+    const [name, setName] = useState<string>('')
 
     return (
 
+        
         <>
         
             <h6>
@@ -9,13 +14,13 @@ const ExampleComponent = () => {
             </h6>
 
             <p>
-                Nome:
+                Nome: 
                 <span>
-                    Nome aqui
+                    {name}
                 </span>
             </p>
 
-            <button>
+            <button onClick={() => setName(' Vinicius')}>
                 Clique Aqui
             </button>
         
