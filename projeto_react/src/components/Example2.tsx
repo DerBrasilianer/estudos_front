@@ -81,6 +81,17 @@ const Example2Component = () => {
                     Enviar
                 </button>
 
+                {isSubmit && (
+
+                    <p>
+
+                        Nome: {data.name} <br />
+                        E-mail: {data.email}
+
+                    </p>
+
+                )}
+
             </form>
         
         </>
