@@ -7,7 +7,7 @@ function App() {
 
     <>
       
-      <MyComponent />
+      <MyComponent color='red' />
 
     </>
 
